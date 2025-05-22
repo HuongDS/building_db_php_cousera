@@ -5,7 +5,7 @@
     $password = "zap";
 
     try {
-        $pdo = new PDO("mysql:host=$hostName;dbname=$dbName",$userName,$password);
+        $pdo = new PDO("mysql:host=$hostName;port=3306;dbname=$dbName",$userName,$password);
         
         //ERRMODE_SILENT is default.
         //ERRMODE_WARNING will still keep executing code.
